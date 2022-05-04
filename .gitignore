@@ -40,3 +40,8 @@ vignettes/*.pdf
 .Rproj.user
 .Rdata
 .DS_Store
+
+
+# my addition
+old_refs/*
+

@@ -1,12 +1,18 @@
 Package: rlapmod
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: R functions for LAPMOD
+Version: 0.0.1
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("massimo", "bressan", , "massimo.bressan@arpa.veneto.it", role = c("aut", "cre"))
+Description: A collection of my handy R functions for post-processing the output of LAPMOD modeling system.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
+Imports: 
+    magrittr,
+    sp,
+    raster,
+    mapview,
+    RColorBrewer,
+    rfunctions
+    
