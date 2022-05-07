@@ -2,4 +2,5 @@
 
 export("%>%")
 export(mapview_lapost_grd)
+export(mapview_lapost_grd_contour)
 importFrom(magrittr,"%>%")
