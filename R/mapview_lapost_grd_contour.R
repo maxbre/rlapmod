@@ -1,18 +1,20 @@
-#' mapview_lalpost_grd
+#' mapview_lalpost_grd_contour
 #'
-#' Create a mapview object from LAPOST ascii grid file and export as html and png files
+#' Create a mapview contourline object from LAPOST ascii grid file
 #'
 #' @param file_grd string path to the LAPOST ascii grid file
 #' @param epsg number epsg to set crs in the raster object
-#' @param levels vector of contour levels to plot
+#' @param levels vector of the levels for the contourplot
+#' @param export logical, export mapview object as hmtl and png files? The default value is equal to FALSE
 #' @param string_filename string to name the output files
 #' @param name_of_map_layer string to name the mapview layer
-#' @return mapview object exported as html and png files
+#' @return mapview contourline object, eventually exported as html and png files
 #' @export
 
 mapview_lapost_grd_contour <- function(file_grd,
                                        epsg = 32632,
                                        levels = NULL,
+                                       export = FALSE,
                                        string_filename = ' file_name',
                                        name_of_map_layer = 'layer_name'){
 
@@ -47,6 +49,9 @@ mapview_lapost_grd_contour <- function(file_grd,
                    layer.name = name_of_map_layer)
 
 
-  rfunctions::export_mapview(map, string_filename)
+  # eventually export the map to hml and png
+  if(export) rfunctions::export_mapview(map, string_filename)
 
+  # and finally return the map
+  map
 }

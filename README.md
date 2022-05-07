@@ -9,8 +9,8 @@
 A collection of my handy R functions for post-processing the output of
 LAPMOD modeling system.
 
-Beware: all the material must be considered experimental, in development
-and not yet fully tested.
+Beware: all the material must be considered experimental, in full
+development and not yet tested.
 
 Caveat emptor: use it at your own risk.
 

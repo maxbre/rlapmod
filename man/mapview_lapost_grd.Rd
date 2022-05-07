@@ -7,6 +7,8 @@
 mapview_lapost_grd(
   file_grd,
   epsg = 32632,
+  at = NULL,
+  export = FALSE,
   string_filename = " file_name",
   name_of_map_layer = "layer_name"
 )
@@ -16,13 +18,18 @@ mapview_lapost_grd(
 
 \item{epsg}{number epsg to set crs in the raster object}
 
+\item{at}{numeric vector defining breakpoints for the visualization,
+default value is NULL by using continuous 'pretty' breakpoints, see lattice::levelplot function for details}
+
+\item{export}{logical, export mapview object as hmtl and png files? The default value is equal to FALSE}
+
 \item{string_filename}{string to name the output files}
 
 \item{name_of_map_layer}{string to name the mapview layer}
 }
 \value{
-mapview object exported as html and png files
+mapview raster object, eventually exported as html and png files
 }
 \description{
-Create a mapview object from LAPOST ascii grid file and export as html and png files
+Create a mapview raster object from LAPOST ascii grid file
 }

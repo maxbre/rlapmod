@@ -2,12 +2,13 @@
 % Please edit documentation in R/mapview_lapost_grd_contour.R
 \name{mapview_lapost_grd_contour}
 \alias{mapview_lapost_grd_contour}
-\title{mapview_lalpost_grd}
+\title{mapview_lalpost_grd_contour}
 \usage{
 mapview_lapost_grd_contour(
   file_grd,
   epsg = 32632,
   levels = NULL,
+  export = FALSE,
   string_filename = " file_name",
   name_of_map_layer = "layer_name"
 )
@@ -17,15 +18,17 @@ mapview_lapost_grd_contour(
 
 \item{epsg}{number epsg to set crs in the raster object}
 
-\item{levels}{vector of contour levels to plot}
+\item{levels}{vector of the levels for the contourplot}
+
+\item{export}{logical, export mapview object as hmtl and png files? The default value is equal to FALSE}
 
 \item{string_filename}{string to name the output files}
 
 \item{name_of_map_layer}{string to name the mapview layer}
 }
 \value{
-mapview object exported as html and png files
+mapview contourline object, eventually exported as html and png files
 }
 \description{
-Create a mapview object from LAPOST ascii grid file and export as html and png files
+Create a mapview contourline object from LAPOST ascii grid file
 }
