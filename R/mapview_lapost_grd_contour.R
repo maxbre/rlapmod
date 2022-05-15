@@ -1,4 +1,4 @@
-#' mapview_lalpost_grd_contour
+#' Plot contour of LAPOST acii grid file in mapview
 #'
 #' Create a mapview contourline object from LAPOST ascii grid file
 #'

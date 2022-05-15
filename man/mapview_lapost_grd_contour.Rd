@@ -2,7 +2,7 @@
 % Please edit documentation in R/mapview_lapost_grd_contour.R
 \name{mapview_lapost_grd_contour}
 \alias{mapview_lapost_grd_contour}
-\title{mapview_lalpost_grd_contour}
+\title{Plot contour of LAPOST acii grid file in mapview}
 \usage{
 mapview_lapost_grd_contour(
   file_grd,
