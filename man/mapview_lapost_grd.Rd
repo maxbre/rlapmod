@@ -10,7 +10,8 @@ mapview_lapost_grd(
   at = NULL,
   export = FALSE,
   string_filename = " file_name",
-  name_of_map_layer = "layer_name"
+  name_of_map_layer = "layer_name",
+  trans_factor = 1
 )
 }
 \arguments{
@@ -26,6 +27,8 @@ default value is NULL by using continuous 'pretty' breakpoints, see lattice::lev
 \item{string_filename}{string to name the output files}
 
 \item{name_of_map_layer}{string to name the mapview layer}
+
+\item{trans_factor}{number, transformation factor to be applied to calculated values, leave it as default = 1}
 }
 \value{
 mapview raster object, eventually exported as html and png files

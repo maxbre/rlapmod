@@ -9,6 +9,7 @@
 #' @param export logical, export mapview object as hmtl and png files? The default value is equal to FALSE
 #' @param string_filename string to name the output files
 #' @param name_of_map_layer string to name the mapview layer
+#' @param trans_factor number, transformation factor to be applied to calculated values, leave it as default = 1
 #' @return mapview raster object, eventually exported as html and png files
 #' @export
 
@@ -17,9 +18,14 @@ mapview_lapost_grd <- function(file_grd,
                                at = NULL,
                                export = FALSE,
                                string_filename = ' file_name',
-                               name_of_map_layer = 'layer_name'){
+                               name_of_map_layer = 'layer_name',
+                               trans_factor = 1){
 
+  # read grd file
   grd <- read_lapost_grd(file_grd, epsg)
+
+  #eventually apply a transf_factor
+  grd <- grd * trans_factor
 
   # eventually to hardcode the binning in mapview
   #my_bins<-c(0, 1, 2, 3, 4, 5, 10, 100, round(max(raster::values(grd)),0))

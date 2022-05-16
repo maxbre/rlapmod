@@ -10,7 +10,8 @@ mapview_lapost_grd_contour(
   levels = NULL,
   export = FALSE,
   string_filename = " file_name",
-  name_of_map_layer = "layer_name"
+  name_of_map_layer = "layer_name",
+  trans_factor = 1
 )
 }
 \arguments{
@@ -25,6 +26,8 @@ mapview_lapost_grd_contour(
 \item{string_filename}{string to name the output files}
 
 \item{name_of_map_layer}{string to name the mapview layer}
+
+\item{trans_factor}{number, transformation factor to be applied to calculated values, leave it as default = 1}
 }
 \value{
 mapview contourline object, eventually exported as html and png files
