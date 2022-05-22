@@ -36,15 +36,16 @@ mapview_lapost_grd_contour <- function(file_grd,
     # use default of contour line
     grd<-raster::rasterToContour(grd)
 
-    # need to sort the factor levels of the spatialLinesDataFRame
-    grd@data$level<-factor(grd@data$level,
-                            as.character(sort(as.numeric(grd@data$level))))
     } else {
 
-    # here it is not necessary to sort the factor levels, not completely understand that...
+    # apply user defined levels
     grd<-raster::rasterToContour(grd, levels=levels)
 
-  }
+    }
+
+  # sort the factor levels of the spatialLinesDataFRame
+  grd@data$level<-factor(grd@data$level, sort(as.numeric(grd@data$level)))
+
 
   # mapview
   map <- mapview::mapview(grd,
