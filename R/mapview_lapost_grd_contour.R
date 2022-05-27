@@ -20,6 +20,10 @@ mapview_lapost_grd_contour <- function(file_grd,
                                        name_of_map_layer = 'layer_name',
                                        trans_factor = 1){
 
+  # this is for getting rid of mapview warning, not to worry about
+  # https://github.com/r-spatial/mapview/issues/422
+  options(rgdal_show_exportToProj4_warnings = "none")
+
   # read grd file
   grd <- read_lapost_grd(file_grd, epsg)
 

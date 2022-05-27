@@ -14,4 +14,7 @@ Imports:
     raster,
     mapview,
     RColorBrewer,
-    rfunctions
+    rfunctions,
+    geosphere,
+    sf,
+    units
