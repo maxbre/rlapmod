@@ -23,3 +23,15 @@ the repository at [GitHub](https://github.com/maxbre/rlapmod/) with:
 if(!require("devtools")) install.packages("devtools")
 devtools::install_github("maxbre/rlapmod")
 ```
+
+### Pay attention!
+
+This package is dependent by some functions provided by another package
+(of mine), that needs to be installed first!
+
+So, here again, it goes like:
+
+``` r
+if(!require("devtools")) install.packages("devtools")
+devtools::install_github("maxbre/rfunctions")
+```
