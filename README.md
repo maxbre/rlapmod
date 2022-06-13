@@ -6,6 +6,7 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/maxbre/rlapmod/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/maxbre/rlapmod/actions/workflows/R-CMD-check.yaml)
+[![CodeFactor](https://www.codefactor.io/repository/github/maxbre/rlapmod/badge)](https://www.codefactor.io/repository/github/maxbre/rlapmod)
 <!-- badges: end -->
 
 A collection of my handy R functions for post-processing the output of
