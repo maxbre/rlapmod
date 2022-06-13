@@ -1,4 +1,4 @@
-#' mapview_lalpost_grd
+#' Plot LAPOST ascii grid file in mapview
 #'
 #' Create a mapview raster object from LAPOST ascii grid file
 #'

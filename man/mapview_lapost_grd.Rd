@@ -2,7 +2,7 @@
 % Please edit documentation in R/mapview_lapost_grd.R
 \name{mapview_lapost_grd}
 \alias{mapview_lapost_grd}
-\title{mapview_lalpost_grd}
+\title{Plot LAPOST ascii grid file in mapview}
 \usage{
 mapview_lapost_grd(
   file_grd,
