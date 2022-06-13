@@ -4,6 +4,8 @@
 # rlapmod <img src="man/figures/logo.png" align="right" height="139" />
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/maxbre/rlapmod/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/maxbre/rlapmod/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 A collection of my handy R functions for post-processing the output of
