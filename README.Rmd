@@ -45,3 +45,5 @@ So, here again, it goes like:
 if(!require("devtools")) install.packages("devtools")
 devtools::install_github("maxbre/rfunctions")
 ```
+
+**This is why the badge R-CMD-check is saying "failing": it's because the dependent package "rfunctions" on my GitHub must be installed first!**
