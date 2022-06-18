@@ -1,8 +1,7 @@
 #' Plot contour of LAPOST ascii grid file in mapview
 #'
 #' Create a mapview contourline object from LAPOST ascii grid file
-#'
-#' Beware: it works ONLY with grid files in ascii format (i.e. NOT with grid files in surfer format... yet!).
+#' \emph{Beware: it works ONLY with grid files in ascii format (i.e. NOT with grid files in surfer format, yet!).}
 #'
 #' @param file_grd string path to the LAPOST ascii grid file
 #' @param epsg number epsg to set crs in the raster object
