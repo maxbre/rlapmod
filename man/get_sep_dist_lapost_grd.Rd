@@ -15,7 +15,7 @@ get_sep_dist_lapost_grd(
 )
 }
 \arguments{
-\item{file_grd}{string path to the LAPOST grid file}
+\item{file_grd}{string path to the LAPOST ascii grid file}
 
 \item{epsg}{number epsg to set crs in the raster object}
 
@@ -34,5 +34,6 @@ a simple feature data frame
 }
 \description{
 Get a a simple feature data frame of separation distances from the source
-(origin) point to some predefined concentration contour lines
+(origin) point to some predefined concentration contour lines.
+Beware: it works ONLY with grid files in ascii format (i.e. NOT with grid files in surfer format... yet!).
 }

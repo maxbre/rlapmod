@@ -34,5 +34,6 @@ default value is NULL by using continuous 'pretty' breakpoints, see lattice::lev
 mapview raster object, eventually exported as html and png files
 }
 \description{
-Create a mapview raster object from LAPOST ascii grid file
+Create a mapview raster object from LAPOST ascii grid file.
+Beware: it works ONLY with grid files in ascii format (i.e. NOT with grid files in surfer format... yet!).
 }
