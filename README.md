@@ -13,6 +13,7 @@
 [![Project Status: WIP - Initial development is in progress, but there
 has not yet been a stable, usable release suitable for the
 public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+
 <!-- badges: end -->
 
 A collection of my handy R functions for post-processing the output of
@@ -25,7 +26,7 @@ Caveat emptor: use it at your own risk.
 
 ### Installation
 
-You can install the development version of the package ‘raermod’ from
+You can install the development version of the package **rlapmod** from
 the repository at [GitHub](https://github.com/maxbre/rlapmod/) with:
 
 ``` r

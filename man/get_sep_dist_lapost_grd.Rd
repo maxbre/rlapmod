@@ -35,5 +35,5 @@ a simple feature data frame
 \description{
 Get a a simple feature data frame of separation distances from the source
 (origin) point to some predefined concentration contour lines.
-Beware: it works ONLY with grid files in ascii format (i.e. NOT with grid files in surfer format... yet!).
+\emph{Beware: it works ONLY with grid files in ascii format (i.e. NOT with grid files in surfer format, yet!).}
 }

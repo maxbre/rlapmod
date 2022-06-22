@@ -17,7 +17,7 @@ mapview_lapost_grd_contour <- function(file_grd,
                                        epsg = 32632,
                                        levels = NULL,
                                        export = FALSE,
-                                       string_filename = ' file_name',
+                                       string_filename = 'file_name',
                                        name_of_map_layer = 'layer_name',
                                        trans_factor = 1){
 

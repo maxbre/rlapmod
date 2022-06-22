@@ -9,7 +9,7 @@ mapview_lapost_grd(
   epsg = 32632,
   at = NULL,
   export = FALSE,
-  string_filename = " file_name",
+  string_filename = "file_name",
   name_of_map_layer = "layer_name",
   trans_factor = 1
 )
