@@ -9,8 +9,8 @@ mapview_lapost_grd_esri_contour(
   epsg = 32632,
   levels = NULL,
   export = FALSE,
-  string_filename = "file_name",
-  name_of_map_layer = "layer_name",
+  string_filename = "export_filename",
+  name_of_map_layer = "mapview_layer_name",
   trans_factor = 1
 )
 }

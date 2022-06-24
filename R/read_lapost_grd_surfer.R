@@ -1,8 +1,8 @@
 #' read_lapost_grd_surfer
 #'
-#' Read LAPOST grid file in surfer format
+#' Read LAPOST grid file in SURFER ASCII format
 #'
-#' @param file_grd string path to LAPOST grid file in surfer format
+#' @param file_grd string path to LAPOST grid file in SURFER ASCII format
 #' @param epsg number epsg to set crs in the raster object
 #' @return raster object
 #' @keywords internal
