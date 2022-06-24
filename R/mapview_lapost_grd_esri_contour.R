@@ -17,8 +17,8 @@ mapview_lapost_grd_esri_contour <- function(file_grd,
                                        epsg = 32632,
                                        levels = NULL,
                                        export = FALSE,
-                                       string_filename = 'file_name',
-                                       name_of_map_layer = 'layer_name',
+                                       string_filename = 'export_filename',
+                                       name_of_map_layer = 'mapview_layer_name',
                                        trans_factor = 1){
 
   # this is for getting rid of mapview warning, not to worry about
