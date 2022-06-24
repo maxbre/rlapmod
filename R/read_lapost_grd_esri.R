@@ -1,13 +1,13 @@
-#' read_lapost_grd
+#' read_lapost_grd_esri
 #'
-#' Read LAPOST ascii grid file
+#' Read LAPOST grid file in ESRI ASCII format
 #'
-#' @param file_grd string path to LAPOST ascii grid file
+#' @param file_grd string path to LAPOST grid file in ESRI ASCII format
 #' @param epsg number epsg to set crs in the raster object
 #' @return raster object
 #' @keywords internal
 
-read_lapost_grd <- function(file_grd, epsg = 32632){
+read_lapost_grd_esri <- function(file_grd, epsg = 32632){
 
   # compose valid epsg string
   epsg <- paste0('+init=epsg:', epsg)

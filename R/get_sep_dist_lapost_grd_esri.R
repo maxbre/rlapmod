@@ -2,7 +2,7 @@
 #'
 #' Get a a simple feature data frame of separation distances from the source
 #' (origin) point to some predefined concentration contour lines.
-#' \emph{Beware: it works ONLY with grid files in ascii format (i.e. NOT with grid files in surfer format, yet!).}
+#' \emph{Beware: it works ONLY with grid files in ESRI ASCII format (i.e. NOT with grid files in SURFER ASCII format)}
 #'
 #' @param file_grd string path to the LAPOST ascii grid file
 #' @param epsg number epsg to set crs in the raster object
@@ -14,7 +14,7 @@
 #' @return a simple feature data frame
 #' @export
 
-get_sep_dist_lapost_grd <- function(file_grd,
+get_sep_dist_lapost_grd_esri <- function(file_grd,
                                     epsg = 32632,
                                     x_source,
                                     y_source,
@@ -28,7 +28,7 @@ get_sep_dist_lapost_grd <- function(file_grd,
   options(rgdal_show_exportToProj4_warnings = "none")
 
   # read grd fle
-  grd <- read_lapost_grd(file_grd, epsg)
+  grd <- read_lapost_grd_esri(file_grd, epsg)
 
   #eventually apply a transf_factor
   grd <- grd * trans_factor

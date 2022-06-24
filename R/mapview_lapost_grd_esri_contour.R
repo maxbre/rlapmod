@@ -1,9 +1,9 @@
-#' Plot contour of LAPOST ascii grid file in mapview
+#' Plot contour of LAPOST grid file in ESRI ASCII format with mapview
 #'
-#' Create a mapview contourline object from LAPOST ascii grid file
-#' \emph{Beware: it works ONLY with grid files in ascii format (i.e. NOT with grid files in surfer format, yet!).}
+#' Create a mapview contourline object from LAPOST grid file in ESRI ASCII format.
+#' \emph{Beware: it works ONLY with grid files in ESRI ASCII format (i.e. NOT with grid files in SURFER ASCII format)}
 #'
-#' @param file_grd string path to the LAPOST ascii grid file
+#' @param file_grd string path to LAPOST grid file in ESRI ASCII format
 #' @param epsg number epsg to set crs in the raster object
 #' @param levels vector of the levels for the contourplot
 #' @param export logical, export mapview object as hmtl and png files? The default value is equal to FALSE
@@ -13,7 +13,7 @@
 #' @return mapview contourline object, eventually exported as html and png files
 #' @export
 
-mapview_lapost_grd_contour <- function(file_grd,
+mapview_lapost_grd_esri_contour <- function(file_grd,
                                        epsg = 32632,
                                        levels = NULL,
                                        export = FALSE,
@@ -26,7 +26,7 @@ mapview_lapost_grd_contour <- function(file_grd,
   options(rgdal_show_exportToProj4_warnings = "none")
 
   # read grd file
-  grd <- read_lapost_grd(file_grd, epsg)
+  grd <- read_lapost_grd_esri(file_grd, epsg)
 
   #eventually apply a transf_factor
   grd <- grd * trans_factor
