@@ -2,9 +2,10 @@
 #'
 #' Get a a simple feature data frame of separation distances from the source
 #' (origin) point to some predefined concentration contour lines.
-#' \emph{Beware: it works ONLY with grid files in ESRI ASCII format (i.e. NOT with grid files in SURFER ASCII format)}
+#' \emph{Beware: it works ONLY with grid files in ESRI ASCII format (i.e. NOT with grid files in SURFER ASCII format).
+#' This function is highly EXPERIMENTAL and in FULL DEVELOPMENT!}
 #'
-#' @param file_grd string path to the LAPOST ascii grid file
+#' @param file_grd string path to the LAPOST grid file in ESRI ASCII format
 #' @param epsg number epsg to set crs in the raster object
 #' @param x_source x coordinates of the source (origin) point
 #' @param y_source y coordinates of the source (origin) point
